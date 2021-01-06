@@ -1,0 +1,143 @@
+.mainContainer{
+    width: 100%;
+    padding: 60px 60px;
+}
+
+.sectionCardGrid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 4fr);
+    column-gap: 30px;
+    row-gap: 50px;
+}
+
+.cardsContainer{
+    width: 100%;
+}
+
+.cards1 {
+    width: 100%;
+    height: auto;
+    background-color: black;
+    box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+.cards2 {
+    width: 100%;
+    height: auto;
+    background-color: aqua;
+    box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.2);
+    color: black;
+}
+
+.titleCard {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.imageChip {
+    width: 100%;
+    margin-top: 25px;
+    margin-left: 40px;
+}
+
+.imgChip {
+    width: 50px;
+}
+
+.numTarjeta {
+    margin-top: 20px;
+    margin-left: 40px;
+    font-size: 22px;
+}
+
+.nameC {
+    margin-top: 20px;
+    margin-left: 40px;
+    font-size: 22px;
+}
+
+.groupDCV {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.dateTarget {
+    margin-left: 40px;
+    font-size: 18px;
+}
+
+.dateT {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.cvT {
+    margin-right: 40px;
+    font-size: 18px;
+}
+
+.cv {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.typeTC {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding-bottom: 30px;
+}
+
+.imgTypeC {
+    width: 100px;
+    margin-right: 40px;
+}
+
+.btnDeleteC {
+    width: 70px;
+    height: 40px;
+    background-color: red;
+    border: none;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 40px;
+    cursor: pointer;
+    outline: none;
+}
+
+.btnEditC {
+    width: 70px;
+    height: 40px;
+    background-color: #5377F5;
+    border: none;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    margin-left: 40px;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnDeleteC:hover {
+    background-color: rgba($color: red, $alpha: 0.8);
+    text-decoration: underline;
+}
+
+.btnEditC:hover {
+    background-color: #5798DE;
+    text-decoration: underline;
+}

@@ -1,0 +1,31 @@
+<main class="mainContainerFormCards">
+    <div class="cardsFormContainer">
+        <p class="titleFormCard">{{edit ? 'UPDATE CARD' : 'ADD CARD'}}</p>
+        <form class="formCards">
+            <div class="inputFormContainer">
+                <input type="text" class="inputForm" name="firstName" placeholder="First Name" [(ngModel)]="cards.firstName">
+            </div>
+            <div class="inputFormContainer">
+                <input type="text" class="inputForm" name="lastName" placeholder="Last Name" [(ngModel)]="cards.lastName">
+            </div>
+            <div class="inputFormContainer">
+                <select name="colorT" class="selectForm" [(ngModel)]="cards.colorT">
+                    <option value="1" selected>Color Negro</option>
+                    <option value="2">Color Celeste Aqua</option>
+                </select>
+            </div>
+            <div class="inputFormContainer">
+                <select name="typeT" class="selectForm" [(ngModel)]="cards.typeT">
+                    <option value="1" selected>VISA</option>
+                    <option value="2">MASTER CARD</option>
+                </select>
+            </div>
+            <div class="inputFormContainer">
+                <input type="text" class="inputForm" name="dateExp" placeholder="Due date: dd/MMM/yyyy" [(ngModel)]="cards.dateExp">
+            </div>
+            <div class="inputFormContainer">
+                <button class="buttonFormCard" (click)="edit ? updateCard() : saveNewCard()">{{edit ? 'UPDATE CARD' : 'SAVE CARD'}}</button>
+            </div>
+        </form>
+    </div>
+</main>

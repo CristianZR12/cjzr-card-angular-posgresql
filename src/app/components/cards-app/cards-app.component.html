@@ -1,0 +1,23 @@
+<main class="mainContainer">
+    <section class="sectionCardGrid">
+        <div class="cardsContainer" *ngFor="let card of cards">
+            <div [class]="cards1(card.colort)">
+                <p class="titleCard">CJZR CARD</p>
+                <div class="imageChip">
+                    <img src="assets/chip_tarjeta_credito.jpg" alt="Chip_Tarjeta_Credito" class="imgChip">
+                </div>
+                <p class="numTarjeta">{{card.numtargeta}}</p>
+                <p class="nameC">{{card.firstname}} {{card.lastname}}</p>
+                <div class="groupDCV">
+                    <p class="dateTarget"><span class="dateT">FV:</span>{{card.dateexp | date: 'dd/MM/yyyy'}}</p>
+                    <p class="cvT"><span class="cv">CV:</span>{{card.cvtarget}}</p>
+                </div>
+                <div class="typeTC">
+                    <button class="btnDeleteC" (click)="deleteTarget(card.idcard)">Delete</button>
+                    <a [routerLink]="['/update/card', card.idcard]" class="btnEditC">Edit</a>
+                    <img [src]="typeTarget(card.typet)" alt="Type_Target" class="imgTypeC">
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
